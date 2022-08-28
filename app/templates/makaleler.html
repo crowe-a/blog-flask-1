@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+
+
+{% block string %}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+  
+    
+    <div class="collapse navbar-collapse" >
+    
+        <ul class="nav navbar-nav navbar-left">
+          <li><a align="left" class="nav-link" href="anasayfa">Anasayfa <span class="sr-only">(current)</span></a></li>
+          <li><a align="left" href="hakkımda"><span  class="sr-only"></span> Hakkında</a></li>
+          <li><a align="left" href="makaleler"><span  class="sr-only"></span> Makaleler</a></li>  
+        </ul>
+
+
+        <ul class="nav  navbar-fixed-top ">
+          <li align="center">
+          <iframe src="https://archive.org/embed/tom_20210806" width="500" height="27" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+          </li>    
+        </ul>
+
+
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a align="right" href="login"><span  class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a align="right" href="register"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  
+        </ul>
+
+
+
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+    <h2>Bordered Table</h2>
+    <p>The .table-bordered class adds borders to a table:</p>            
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Yazar</th>
+          <th>Konu</th>
+          <th>değiştirme tarihi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Yiğit</td>
+          <td><a href="makale1"  >Konu1</a></td>
+          <td>28:08:2022-20:31</td><!--<a>a/a> içine aldığınız şey tıklanabilir duruma geliyopr-->
+        </tr>
+        <tr>
+          <td>Yiğit</td>
+          <td><a href="makale2"  >Müzeyyen</a></td>
+          <td>15:03:2022-12:57</td><!--<a>a/a> içine aldığınız şey tıklanabilir duruma geliyopr-->
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">Dear Chris </h3>
+    <p class="text-center">The joy of life comes from our encounters with new experiences,
+       and hence there is no greater joy than to have an endlessly changing horizon, for each day to have a new and different sun.
+
+
+      <br> Christopher McCandless<br>
+
+
+      
+    
+    </p>
+    
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://archive.org/download/11639558/cotahuasi-canyon_2%20-%20Kopya.jpg" alt="Paris" width="400" height="300">
+          <p><strong>And Mountains</strong></p>
+          <p></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal"></button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://archive.org/download/cotahuasi-canyon_2/Everest-Base-Camp-trek%20%281%29.jpg" alt="New York" width="400" height="300">
+          <p><strong>Everest Basecamp Trekking</strong></p>
+          <p></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal"></button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://archive.org/download/11639558/ushuaia-patagonia-nature-beach-l.jpg" alt="San Francisco" width="400" height="300">
+          <p><strong>Lighthouse at the end of the world</strong></p>
+          <p></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal"></button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>Made By <a href="" data-toggle="tooltip" title="Visit">Yiğit Çetinkaya</a></p> 
+  </footer>
+
+{% endblock string %}
+
+

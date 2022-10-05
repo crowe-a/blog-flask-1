@@ -1,4 +1,4 @@
-var token="5763359618:AAGJnlCnJx7mNq7nRlDRPr1sBcFZ7dFqs7w"
+
 var chat_ıd=1102385447
 
 var last_output="message***"

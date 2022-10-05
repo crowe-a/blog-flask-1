@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table>  
+  <tr>
+    <th id="başlık">COİN</th>
+    <th id="başlık">PRİCE</th>
+    <th id="başlık">DATE</th>
+  </tr>
+  <tr>
+    <th>BTC</th>
+    <th id="turkos">
+        {% block  %}
+        data
+        {% endblock %}
+        
+    </th>
+    <th>11.11.22</th>
+  </tr>
+  <tr>
+    <th>ETH</th>
+    <th>1001</th>
+    <th>22.22.55</th>
+  </tr>
+  <tr>
+    <th>DOGO</th>
+    <th>1002</th>
+    <th>55.11.10</th>
+  </tr>
+</table>
+    
+
+    
+        <script>
+        let response = await fetch("https://api.blockchain.com/v3/exchange/tickers/BTC-USD");
+
+        let json = await response.json();
+        
+        console.log(json);
+        getElementById("turko").innerHTML = json;
+        
+    </script>
+     <script>
+        const cars = ["BMW", "Volvo", "Saab", "Ford"];
+        
+        let i = 0;
+        let text = "";
+        for (;cars[i];) {
+          text += cars[i] + "<br>";
+          i++;
+        }
+        
+        document.getElementById("1.").innerHTML = text;
+        </script>
+        
+    
+    
+
+
+   
+
+
+
+        
+</body>
+</html>

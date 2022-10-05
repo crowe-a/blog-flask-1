@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Document</title>
+
+    <style>
+ 
+    </style>
+</head>
+<body>
+    
+<h1 id="turko"></h1>
+    
+
+
+    <script>
+        export async function fack2() {
+          let response = await fetch('https://api.blockchain.com/v3/exchange/tickers/DOGE-USD');
+      
+          let json = await response.json();
+      
+          
+          
+          document.getElementById("dogos").innerHTML=json["last_trade_price"]
+          console.log(json["last_trade_price"])
+          }
+      async function fack3() {
+            let response = await fetch("https://api.blockchain.com/v3/exchange/tickers/ETH-USD");
+      
+              let json = await response.json();
+              
+              
+          
+              document.getElementById("eths").innerHTML = json["last_trade_price"];
+              console.log(json["last_trade_price"])
+              }
+              
+       async function fack1() {
+          let response = await fetch("https://api.blockchain.com/v3/exchange/tickers/BTC-USD");    
+          let json = await response.json();
+          document.getElementById("turko").innerHTML = json["last_trade_price"];
+          console.log(json["last_trade_price"])
+                }          
+                
+      setInterval(fack2,1000)
+      setInterval(fack3,1000)
+      setInterval(fack1,1000)
+      
+      </script>
+</body>
+</html>
